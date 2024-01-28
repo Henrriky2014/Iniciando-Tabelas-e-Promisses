@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --ff-primary: 'Roboto', sans-serif;
+    --bc-color: #000000;
+    --bt-color: #065E7C;
+    --text-color: #E1E1E6;
+    --text-bt-color: #F75A68;
+}
+
+body * {
+    font-family: var(--ff-primary);
+
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--bc-color);
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+/* Screen 1*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 11.5rem;
+    
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46.2rem;
+    
+    border: 1px solid #12b6c2;
+    outline: none;
+    border-radius: .5rem;
+
+    padding: 0 .8rem;
+    
+    background: #06181C;
+    color: white;
+}
+
+.search label {
+    font-size: 1.6rem;
+}
+
+
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    height: 4.8rem;
+
+    border: none;
+    border-radius: .5rem;
+    
+    color: #fff;
+    
+    background-color: var(--bt-color);
+    
+    padding: 1.2rem 3.2rem;
+    gap: .8rem;
+    
+    cursor: pointer;
+}
+
+.search button:hover {
+    color: #065E7C;
+    background-color: white;
+}
+
+.search p {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8.6rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+thead tr th{
+    font-weight: bold;
+}
+
+table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+table tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+table * {
+    font-size: 2rem;
+    color: var(--text-color)
+}
+
+table th {
+    background-color: #092D38;
+    text-align: left;
+    font-weight: normal;
+    padding: 4rem 1.6rem 2.4rem;
+    
+}
+
+table td {
+    padding: 4rem 1.6rem 2.4rem;
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background: #06161B80;
+}
+
+table tr:nth-child(even) {
+    background-color: #06181C;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+
+    display: flex;
+    align-items: center;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    color: var(--text-bt-color);
+    font-weight: bold;
+}
+
+td button:hover {
+    color: #ff3949;
+    cursor: pointer;
+}
+
+/* Screen 1 */
+
+ .screen2 table td {
+
+    height: 68.8rem;
+
+
+    font-weight: bold;
+    
+    background: rgba(6, 22, 27, 0.50);
+} 
+
+.screen2 .in_tbody {
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 6rem;
+}   
+
+
+
+.screen2 table td p{
+    color: #4E5455;
+    font-size: 4rem;
+} 
+
+.screen2 img {
+    width: 13.2rem;
+    height: 12.5rem;
+    margin: 21rem 1rem 29rem 19.2rem;
+}
